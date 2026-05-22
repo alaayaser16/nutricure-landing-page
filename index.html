@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriCure — التغذية العلاجية والاستشارات الصحية</title>
+    <meta
+      name="description"
+      content="منصة NutriCure للتغذية العلاجية — خطط غذائية علمية مخصصة لإدارة الأمراض المزمنة والوزن والصحة العامة"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <span class="logo__icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="16"
+                cy="16"
+                r="16"
+                fill="#6DBD9D"
+                fill-opacity="0.15"
+              />
+              <path
+                d="M16 6C16 6 10 11 10 17a6 6 0 0012 0c0-6-6-11-6-11z"
+                fill="#6DBD9D"
+              />
+              <path
+                d="M16 10v10M13 15l3-5 3 5"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="logo__text">
+            <strong>NutriCure</strong>
+            <small>التغذية العلاجية والاستشارات الصحية</small>
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="#hero" class="nav__link active">الرئيسية</a></li>
+            <li><a href="#about" class="nav__link">من نحن</a></li>
+            <li><a href="#services" class="nav__link">الخدمات</a></li>
+            <li><a href="#testimonials" class="nav__link">آراء العملاء</a></li>
+            <li><a href="#contact" class="nav__link">تواصل معنا</a></li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--sm"
+            >احجز استشارتك الآن</a
+          >
+        </nav>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__list">
+          <li><a href="#hero" class="mobile-menu__link">الرئيسية</a></li>
+          <li><a href="#about" class="mobile-menu__link">من نحن</a></li>
+          <li><a href="#services" class="mobile-menu__link">الخدمات</a></li>
+          <li>
+            <a href="#testimonials" class="mobile-menu__link">آراء العملاء</a>
+          </li>
+          <li><a href="#contact" class="mobile-menu__link">تواصل معنا</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--full"
+          >احجز استشارتك الآن</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== HERO SECTION ===== -->
+      <section class="hero" id="hero">
+        <!-- Decorative bg blobs -->
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+
+        <div class="container hero__inner">
+          <!-- Text Side -->
+          <div class="hero__content fade-up">
+            <div class="badge">
+              <span class="badge__dot"></span>
+              منصة تغذية علاجية موثوقة
+            </div>
+
+            <h1 class="hero__heading">
+              صحتك تبدأ من<br />
+              <span class="text-accent">عاداتك..</span>
+            </h1>
+            <p class="hero__sub-heading">
+              خطط تغذية علاجية مصممة خصيصاً لنمط حياة صحي ومستدام
+            </p>
+
+            <p class="hero__body">
+              في <strong>NutriCure</strong>، نؤمن بأن الغذاء الصحيح هو أقوى
+              دواء. نقدم برامج تغذية علاجية مبنية على أسس علمية دقيقة، مصممة
+              بشكل فردي لكل عميل، تساعدك على السيطرة على الأمراض المزمنة، إدارة
+              وزنك، وتحقيق توازن صحي حقيقي ومستدام من أي مكان.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary btn--lg">
+                احجز استشارتك الآن
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M4 8h8M8 4l4 4-4 4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="#services" class="btn btn--ghost btn--lg"
+                >اكتشف خدماتنا</a
+              >
+            </div>
+
+            <!-- Pills -->
+            <div class="hero__pills">
+              <span class="pill">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <circle
+                    cx="7"
+                    cy="7"
+                    r="6"
+                    stroke="#6DBD9D"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M4.5 7l2 2 3-3"
+                    stroke="#6DBD9D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                إدارة السكري ومقاومة الإنسولين
+              </span>
+              <span class="pill">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <circle
+                    cx="7"
+                    cy="7"
+                    r="6"
+                    stroke="#6DBD9D"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M4.5 7l2 2 3-3"
+                    stroke="#6DBD9D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                برامج خسارة وزيادة الوزن
+              </span>
+              <span class="pill">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <circle
+                    cx="7"
+                    cy="7"
+                    r="6"
+                    stroke="#6DBD9D"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M4.5 7l2 2 3-3"
+                    stroke="#6DBD9D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                استشارات أونلاين
+              </span>
+            </div>
+          </div>
+
+          <!-- Image Side -->
+          <div class="hero__visual fade-up fade-up--delay">
+            <div class="hero__img-wrap">
+              <img
+                src="images\healthy dishes.jpg"
+                alt="أطباق تغذية صحية وعلاجية"
+                class="hero__img"
+              />
+              <!-- Floating Cards -->
+              <div class="hero__card hero__card--1 float">
+                <div class="hero__card-icon">🏆</div>
+                <div>
+                  <strong>+500</strong>
+                  <span>عميل راضٍ</span>
+                </div>
+              </div>
+              <div class="hero__card hero__card--2 float float--slow">
+                <div class="hero__card-icon">✅</div>
+                <div>
+                  <strong>نتائج مضمونة</strong>
+                  <span>خطط علمية فردية</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll hint -->
+        <div class="hero__scroll-hint">
+          <span>اكتشف أكثر</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT SECTION ===== -->
+      <section class="about section" id="about">
+        <div class="container about__inner">
+          <!-- Image -->
+          <div class="about__visual fade-up">
+            <div class="about__img-wrap">
+              <img
+                src="images\pexels-beyzahzah-89810429-15319021 (1).jpg"
+                alt="فريق NutriCure"
+                class="about__img"
+              />
+              <div class="about__img-badge">
+                <span>🌿</span>
+                <p>تغذية علمية<br />موثوقة</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="about__content fade-up fade-up--delay">
+            <div class="section-label">من نحن</div>
+            <h2 class="section-heading">
+              علم التغذية في خدمة<br /><span class="text-accent"
+                >صحتك الحقيقية</span
+              >
+            </h2>
+            <p class="section-body">
+              نحن منصة <strong>NutriCure</strong> للتغذية العلاجية، نجمع بين
+              الخبرة العلمية والرعاية الشخصية لنقدم لك خطة غذائية مبنية على
+              تحليل دقيق لحالتك الصحية، أهدافك، ونمط حياتك. سواء كنت تعاني من
+              مرض مزمن، تريد إدارة وزنك، أو تسعى لنمط حياة صحي متوازن — نحن هنا
+              لنرافقك في كل خطوة.
+            </p>
+
+            <ul class="about__features">
+              <li class="about__feature">
+                <span class="feature-check">
+                  <svg width="16" height="16" viewBox="0 0 16 16">
+                    <path
+                      d="M3 8l4 4 6-6"
+                      stroke="#6DBD9D"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+                خطط غذائية مخصصة بالكامل لكل عميل حسب حالته الصحية
+              </li>
+              <li class="about__feature">
+                <span class="feature-check">
+                  <svg width="16" height="16" viewBox="0 0 16 16">
+                    <path
+                      d="M3 8l4 4 6-6"
+                      stroke="#6DBD9D"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+                متابعة مستمرة وتعديل البرنامج بناءً على تقدمك الفعلي
+              </li>
+              <li class="about__feature">
+                <span class="feature-check">
+                  <svg width="16" height="16" viewBox="0 0 16 16">
+                    <path
+                      d="M3 8l4 4 6-6"
+                      stroke="#6DBD9D"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+                استشارات أونلاين مريحة من أي مكان وفي أي وقت
+              </li>
+            </ul>
+
+            <!-- Stats -->
+            <div class="about__stats">
+              <div class="stat-card">
+                <strong class="stat-card__num">+500</strong>
+                <span class="stat-card__label">عميل تم خدمته</span>
+              </div>
+              <div class="stat-card">
+                <strong class="stat-card__num">98%</strong>
+                <span class="stat-card__label">نسبة الرضا</span>
+              </div>
+              <div class="stat-card">
+                <strong class="stat-card__num">+5</strong>
+                <span class="stat-card__label">سنوات خبرة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SERVICES SECTION ===== -->
+      <section class="services section section--alt" id="services">
+        <div class="container">
+          <div class="section-header fade-up">
+            <div class="section-label">خدماتنا</div>
+            <h2 class="section-heading">
+              حلول تغذوية متكاملة<br /><span class="text-accent"
+                >لكل احتياج</span
+              >
+            </h2>
+            <p class="section-sub">
+              نقدم برامج غذائية علمية شاملة مصممة لتلبية احتياجاتك الصحية بدقة
+              واهتمام حقيقي
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <!-- Card 1 -->
+            <div class="service-card fade-up">
+              <div class="service-card__icon-wrap">
+                <span class="service-card__icon"
+                  ><img src="images\sugar.png" alt="sugar icon"
+                /></span>
+              </div>
+              <h3 class="service-card__title">أنظمة غذائية لمرضى السكري</h3>
+              <p class="service-card__body">
+                خطط غذائية دقيقة تساعد على ضبط مستويات السكر في الدم وتحسين
+                مقاومة الإنسولين من خلال تنظيم علمي للوجبات اليومية والتوازن
+                الغذائي المثالي.
+              </p>
+              <a href="#contact" class="service-card__link">احجز الآن ←</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="service-card fade-up" style="--delay: 0.1s">
+              <div
+                class="service-card__icon-wrap service-card__icon-wrap--peach"
+              >
+                <span class="service-card__icon"
+                  ><img src="images\weight loss.png" alt="weight loss"
+                /></span>
+              </div>
+              <h3 class="service-card__title">برامج خسارة وزيادة الوزن</h3>
+              <p class="service-card__body">
+                برامج مُهيكلة لخسارة الوزن الزائد أو زيادة الوزن الصحي بطريقة
+                تدريجية ومستدامة، بعيداً عن الحميات القاسية والحلول المؤقتة.
+              </p>
+              <a href="#contact" class="service-card__link">احجز الآن ←</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="service-card fade-up" style="--delay: 0.2s">
+              <div
+                class="service-card__icon-wrap service-card__icon-wrap--mint"
+              >
+                <span class="service-card__icon"
+                  ><img src="images\mothers ' icons.png" alt="mothers"
+                /></span>
+              </div>
+              <h3 class="service-card__title">تغذية الحوامل والمرضعات</h3>
+              <p class="service-card__body">
+                برامج تغذية متخصصة لدعم صحة الأم والجنين خلال مراحل الحمل
+                والرضاعة، بما يضمن الحصول على العناصر الغذائية الضرورية بشكل
+                كافٍ ومتوازن.
+              </p>
+              <a href="#contact" class="service-card__link">احجز الآن ←</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="service-card fade-up" style="--delay: 0.3s">
+              <div
+                class="service-card__icon-wrap service-card__icon-wrap--sage"
+              >
+                <span class="service-card__icon"
+                  ><img
+                    src="images\online consultancy.png"
+                    alt="online consyltancy"
+                /></span>
+              </div>
+              <h3 class="service-card__title">استشارات أونلاين</h3>
+              <p class="service-card__body">
+                احصل على استشارتك التغذوية المتخصصة عن بُعد بكل سهولة وراحة —
+                تواصل مع متخصصنا من منزلك وابدأ رحلتك الصحية بدون تعقيدات.
+              </p>
+              <a href="#contact" class="service-card__link">احجز الآن ←</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TESTIMONIALS SECTION ===== -->
+      <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="section-header fade-up">
+            <div class="section-label">آراء العملاء</div>
+            <h2 class="section-heading">
+              قصص نجاح حقيقية<br /><span class="text-accent"
+                >تتحدث عن نفسها</span
+              >
+            </h2>
+            <p class="section-sub">
+              أكثر من 500 عميل غيّروا حياتهم الصحية معنا — هذه بعض تجاربهم
+              الملهمة
+            </p>
+          </div>
+
+          <div class="testimonials__grid">
+            <!-- Card 1 -->
+            <div class="testimonial-card fade-up">
+              <div class="testimonial-card__quote">"</div>
+              <p class="testimonial-card__body">
+                بعد سنوات من الكفاح مع السكري، وجدت في NutriCure الحل الحقيقي.
+                الخطة الغذائية المخصصة لي أعادت مستويات السكر لمعدلاتها الطبيعية
+                خلال 3 أشهر فقط. أنصح كل مريض سكري بالتواصل معهم.
+              </p>
+              <div class="testimonial-card__footer">
+                <div class="avatar">م</div>
+                <div>
+                  <strong class="testimonial-card__name">محمد السيد</strong>
+                  <span class="testimonial-card__tag">إدارة السكري</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card fade-up" style="--delay: 0.1s">
+              <div class="testimonial-card__quote">"</div>
+              <p class="testimonial-card__body">
+                خسرت 18 كيلو في 4 أشهر بدون حرمان أو تعب! الدكتورة فهمت
+                احتياجاتي وصممت خطة مريحة ومناسبة لأسلوب حياتي. الاستشارات
+                الأونلاين وفّرت عليّ وقتاً ومجهوداً كبيراً جداً.
+              </p>
+              <div class="testimonial-card__footer">
+                <div class="avatar avatar--peach">ن</div>
+                <div>
+                  <strong class="testimonial-card__name">نورهان أحمد</strong>
+                  <span class="testimonial-card__tag">خسارة الوزن</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card fade-up" style="--delay: 0.2s">
+              <div class="testimonial-card__quote">"</div>
+              <p class="testimonial-card__body">
+                خلال فترة حملي كنت قلقة جداً على تغذيتي وتغذية طفلتي. NutriCure
+                قدم لي برنامجاً متكاملاً ومتابعة أسبوعية حقيقية. أنهيت الحمل
+                بصحة ممتازة ووزن مثالي. شكراً من القلب!
+              </p>
+              <div class="testimonial-card__footer">
+                <div class="avatar avatar--mint">س</div>
+                <div>
+                  <strong class="testimonial-card__name">سارة عبدالله</strong>
+                  <span class="testimonial-card__tag">تغذية الحوامل</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="trust-strip fade-up">
+            <div class="trust-item"><span>🔬</span> مبني على أسس علمية</div>
+            <div class="trust-divider"></div>
+            <div class="trust-item"><span>🛡️</span> خصوصية تامة</div>
+            <div class="trust-divider"></div>
+            <div class="trust-item"><span>📱</span> متابعة عن بُعد</div>
+            <div class="trust-divider"></div>
+            <div class="trust-item"><span>⭐</span> نتائج مضمونة</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT SECTION ===== -->
+      <section class="contact section section--alt" id="contact">
+        <div class="container">
+          <div class="section-header fade-up">
+            <div class="section-label">تواصل معنا</div>
+            <h2 class="section-heading">
+              ابدأ رحلتك الصحية<br /><span class="text-accent">اليوم</span>
+            </h2>
+            <p class="section-sub">
+              احجز استشارتك الآن وخذ أول خطوة نحو نمط حياة صحي ومتوازن
+            </p>
+          </div>
+
+          <div class="contact__inner">
+            <!-- Info Column -->
+            <div class="contact__info fade-up">
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M20.52 3.48A11.92 11.92 0 0012 0C5.37 0 0 5.37 0 12c0 2.12.56 4.1 1.52 5.83L0 24l6.34-1.49A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.24-6.22-3.48-8.52zM12 22c-1.85 0-3.6-.5-5.1-1.36l-.37-.21-3.76.88.9-3.65-.24-.38A9.94 9.94 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm5.44-7.34c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.08-.13-.28-.2-.58-.35z"
+                      fill="#6DBD9D"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-card__body">
+                  <h4>واتساب</h4>
+                  <p>تواصل معنا مباشرة على واتساب للحجز السريع والاستفسارات</p>
+                  <a
+                    href="https://wa.me/201000000000"
+                    class="contact-card__link"
+                    target="_blank"
+                    >+20 100 000 0000</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                      fill="#6DBD9D"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-card__body">
+                  <h4>البريد الإلكتروني</h4>
+                  <p>راسلنا في أي وقت وسنرد عليك خلال 24 ساعة</p>
+                  <a href="mailto:info@nutricure.eg" class="contact-card__link"
+                    >info@nutricure.eg</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                      fill="#6DBD9D"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-card__body">
+                  <h4>متابعة أونلاين</h4>
+                  <p>
+                    استمتع بالاستشارات والمتابعة عن بُعد من أي مكان في العالم
+                  </p>
+                  <span class="contact-card__link">متاح 7 أيام / أسبوعياً</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form Column -->
+            <div class="contact__form-wrap fade-up fade-up--delay">
+              <div class="form-card">
+                <h3 class="form-card__title">احجز استشارتك الآن</h3>
+                <p class="form-card__sub">
+                  أرسل بياناتك وسنتواصل معك في أقرب وقت
+                </p>
+
+                <div class="form">
+                  <div class="form__group">
+                    <label class="form__label">الاسم الكامل</label>
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="أدخل اسمك الكريم"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label">رقم الهاتف</label>
+                    <input
+                      type="tel"
+                      class="form__input"
+                      placeholder="01X XXXX XXXX"
+                      dir="ltr"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      class="form__input"
+                      placeholder="example@email.com"
+                      dir="ltr"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label">تفاصيل الاستشارة</label>
+                    <textarea
+                      class="form__textarea"
+                      rows="4"
+                      placeholder="أخبرنا باختصار عن حالتك الصحية وما تريد تحقيقه.."
+                    ></textarea>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn--primary btn--full btn--lg form__submit"
+                    id="submitBtn"
+                  >
+                    احجز استشارتك الآن
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M4 8h8M8 4l4 4-4 4"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <p class="form-card__note">
+                  🔒 بياناتك محمية تماماً — نحترم خصوصيتك
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="logo logo--white">
+            <span class="logo__icon">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="16"
+                  fill="#6DBD9D"
+                  fill-opacity="0.2"
+                />
+                <path
+                  d="M16 6C16 6 10 11 10 17a6 6 0 0012 0c0-6-6-11-6-11z"
+                  fill="#6DBD9D"
+                />
+                <path
+                  d="M16 10v10M13 15l3-5 3 5"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="logo__text">
+              <strong>NutriCure</strong>
+              <small>التغذية العلاجية</small>
+            </span>
+          </a>
+          <p class="footer__tagline">
+            نؤمن بأن الغذاء الصحيح هو أقوى دواء — نرافقك في كل خطوة نحو صحة أفضل
+            وحياة أجمل.
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__links-title">روابط سريعة</h4>
+          <ul>
+            <li><a href="#hero">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#testimonials">آراء العملاء</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__links-title">خدماتنا</h4>
+          <ul>
+            <li><a href="#services">أنظمة السكري</a></li>
+            <li><a href="#services">خسارة الوزن</a></li>
+            <li><a href="#services">تغذية الحوامل</a></li>
+            <li><a href="#services">استشارات أونلاين</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4 class="footer__links-title">تواصل معنا</h4>
+          <div class="footer__contact-items">
+            <a href="https://wa.me/201000000000" class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M20.52 3.48A11.92 11.92 0 0012 0C5.37 0 0 5.37 0 12c0 2.12.56 4.1 1.52 5.83L0 24l6.34-1.49A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.24-6.22-3.48-8.52z"
+                  fill="#9FC8B2"
+                />
+              </svg>
+              واتساب
+            </a>
+            <a href="mailto:info@nutricure.eg" class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  fill="#9FC8B2"
+                />
+              </svg>
+              info@nutricure.eg
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <p>© 2025 NutriCure — جميع الحقوق محفوظة. صُنع بـ 💚 لصحتك</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <path
+          d="M9 14V4M4 9l5-5 5 5"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <!-- Success Toast -->
+    <div class="toast" id="toast">
+      <span>✅</span> تم إرسال طلبك بنجاح! سنتواصل معك قريباً.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
